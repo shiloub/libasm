@@ -12,7 +12,7 @@ ft_strcpy:
     cmp byte [rsi], 0
     je _exit
     mov r10b, byte [rsi]
-    mov [rdi], r10b
+    mov byte [rdi], r10b
     inc rsi
     inc rdi
     jmp _loop
