@@ -3,7 +3,9 @@ NASM = nasm
 LD = ld
 NASM_FLAGS = -f elf64 -g -F dwarf
 LD_FLAGS = -g
-SRC = ft_strlen.s
+SRC = ft_strlen.s\
+		ft_strcpy.s\
+		
 OBJ = $(SRC:.s=.o)
 
 all : $(NAME)
